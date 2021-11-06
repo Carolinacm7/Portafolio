@@ -1,0 +1,18 @@
+
+/* Variables
+  ============================= */
+
+  :root{
+    --color-primary:#2f5d6c;
+    --color-black:#02131b;
+    --color-white:#ffffff;
+    --color-light-blue:#94b5bc;
+    --color-dark-blue:#288896;
+  }
+  
+  h1{
+    font-size: 100px ;
+    font-weight: 600;
+    color: var(--color-primary);
+  }
+  
