@@ -57,31 +57,51 @@
 
       
   header {
-    height:58vh;
+    height:60vh;
   }
 
  section.flex-container {
    display: flex;
    flex-direction:row;
    flex-wrap: wrap;
-   justify-content: space-around ;
+   justify-content: center ;
    align-items: flex-start;
    align-content: flex-start ;
  }
-/* css specificity :nombrar las clases de manera muy detallada */
+/* css specificity :nombrar las clases de manera muy detallada 
+   para seleccionar y modificar solo lo necesario y evitar errores*/
  section.flex-container .img-profile{
    margin-top: 5%;
  border-radius: 50%;
  width: 60%;
 }
-section.flex-container .profile{
- 
-flex-direction:column ;
-flex-wrap: wrap ;
-justify-content:	flex-start;
-align-items	: stretch;
-align-content:stretch ;
+
+.flex-container .profile .social-nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
+.flex-container .profile .profile__title__two {
+  text-indent:19%;
+}
 
+.flex-container .profile__line {
+width: 60%;
+height: 3px;
+color:var(--color-white);
+position: fixed;
+left: 39%;
+top: 30%;
+background-color:var(--color-white);
+}
+
+.profile .social-nav .social-item  {
+  list-style: none;
+  
+}
+
+.social-nav .social-item  .social-img{
+  width: 40%;
+}
  
