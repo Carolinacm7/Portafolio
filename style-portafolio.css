@@ -371,19 +371,108 @@
       }
    /*estilos proyectos*/
     
-
- 
   section.projects {
    display: flex;
    flex-direction: column;
    align-items: center;
+    height: 98vh;
     background-color: var(--color-primary);
-    height: 90vh;
+    
+  }
+  .card-projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+    
+  }
+  .body-card{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-content: center;
+    width: 20%;
+    height: 94%;
+    border-radius: 2%;
+    background-color: var(--color-white);
   }
   .title-projets{
+    display: flex;
+    align-items: center;
     color: var(--color-white);
   }
- 
+  .logo-card{
+    margin-top: 10%;
+    width: 90%;
+    margin-left: 2%;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+  }
+  .logo-card-f{
+    width: 80%;
+    margin-left: 8%;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+  }
+  .logo-card-b{
+    width: 80%;
+    margin-left: 15%;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+  }
+  .description-card{
+    text-align: center;
+  }
+
+  .title-card{
+    color: var(--color-primary);
+    height: 1vh;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+}
+  
+  .btn-card{
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
+    border-radius: 30px;
+    padding: 4% 31% 4% 29%;
+    font-size: 1.2rem;
+    border: none;
+    margin-left: 2%;
+    /* display: flex; */
+    font-family: var(--font-family-base);
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    font-family: var(--font-family-base);
+    width: 19.8%;
+    border-radius: 10%;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  
+  }
+  .dropdown-content a {
+    color: var(--color-white);
+    font-family: var(--font-family-base);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color:var(--color-gray);
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:var(--color-light-blue);}  
 
     @media (max-width:900px) {
       section.flex-container {
@@ -426,18 +515,102 @@
     }
     .container-soft-skill{
         flex-direction: column;
+        text-align: center;
     }
-    section.projects{
+    section.projects {
       margin-top: 15%;
-      height: auto;
-      padding: 10% 55%;
+      background-color: var(--color-primary);
+      height: 267vh;
+    
+     }
+     .card-projects{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       
     }
-    article.cards-projects{
-      flex-direction: column;
-    }
-    .personal{
-      text-align: center;
-      font-size: 2.4rem;
-    }
+
+     .body-card{
+       display: flex;
+       flex-direction: column;
+       align-content: center;
+       width: 53%;
+       border-radius: 2%;
+       background-color: var(--color-white);
+       margin: 10%;
+     }
+     .title-projets{
+       display: flex;
+       align-items: center;
+       color: var(--color-white);
+     }
+     .logo-card{
+       margin-top: 10%;
+       width: 90%;
+       margin-left: 2%;
+       background-color: var(--color-white);
+       display: flex;
+       justify-content: center;
+     }
+     .logo-card-f{
+       width: 80%;
+       margin-left: 8%;
+       background-color: var(--color-white);
+       display: flex;
+       justify-content: center;
+     }
+     .logo-card-b{
+       width: 20%;
+       margin-left: 15%;
+       background-color: var(--color-white);
+       display: flex;
+       justify-content: center;
+     }
+     .description-card{
+       text-align: center;
+     }
+   
+     .title-card{
+       color: var(--color-primary);
+       height: 1vh;
+       margin-top: 4%;
+       display: flex;
+       justify-content: center;
+   }
+     
+     .btn-card{
+       background-color: var(--color-light-blue);
+       color: var(--color-white);
+       border-radius: 30px;
+       padding: 4% 31% 4% 29%;
+       font-size: 1.2rem;
+       border: none;
+       margin-left: 2%;
+       /* display: flex; */
+       font-family: var(--font-family-base);
+       cursor: pointer;
+     }
+     .dropdown-content {
+       font-family: var(--font-family-base);
+       width: 77%;
+       border-radius: 10%;
+       text-align: center;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     
+     }
+     .dropdown-content a {
+       color: var(--color-white);
+       font-family: var(--font-family-base);
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
+     }
+     .dropdown-content a:hover {
+       background-color:var(--color-gray);
+       color: var(--color-primary);
+       font-size: 1.2rem;
+       cursor: pointer;
+     }
+     
+   
   }
