@@ -474,7 +474,20 @@
 
 .dropdown:hover .dropbtn {background-color:var(--color-light-blue);}  
 
+.logo-footer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
+footer section {
+  font-family: var(--font-family-base);
+  color: var(--color-primary);
+  text-align: center;
+  white-space: pre;
+  font-size:0.7rem;
+}
 
     @media (max-width:900px) {
       section.flex-container {
