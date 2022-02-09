@@ -54,7 +54,7 @@
 
     /*estilos perfil*/
     section.flex-container {
-        background-image: url(../imagen/foto-perfil.jpg);
+        background-image: url(./imagen/foto-perfil.jpg);
         background-size: cover;
         background-position: top;
         display: flex;
@@ -491,7 +491,7 @@ footer section {
 
     @media (max-width:900px) {
       section.flex-container {
-        background-image: url(../imagen/foto-perfil-mb.jpg);
+        background-image: url(./imagen/foto-perfil-mb.jpg);
         background-repeat: no-repeat;
         align-items: center;
         height: 72vh;
