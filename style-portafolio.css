@@ -415,9 +415,9 @@
     display: flex;
     justify-content: center;
   }
-  .logo-card-b{
-    width: 80%;
-    margin-left: 15%;
+  .logo-card-B{
+    width: 94%;
+   margin-left: 5%;
     background-color: var(--color-white);
     display: flex;
     justify-content: center;
@@ -473,6 +473,8 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color:var(--color-light-blue);}  
+
+
 
     @media (max-width:900px) {
       section.flex-container {
@@ -611,6 +613,4 @@
        font-size: 1.2rem;
        cursor: pointer;
      }
-     
-   
   }
