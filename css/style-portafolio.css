@@ -439,13 +439,14 @@ section.projects {
   text-align: center;
   padding-top: 1.5rem;
   color: var(--color-white);
+  display: flex;
+  align-items: center;
 }
 .logo-card {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--color-white);
-  
+  width: 90%;
+  height: 25vh;
+  object-fit:contain;
+  margin-left: 10px;
 }
 .title-card {
   color: var(--color-primary);
@@ -609,25 +610,7 @@ footer section {
     margin: 20%;
   }
 
-  .logo-card {
-    margin-top: 15%;
-    width: 83%;
-    margin-left: 9%;
-  }
 
-  .logo-card-f {
-    width: 80%;
-    margin-left: 8%;
-    background-color: var(--color-white);
-    display: flex;
-    justify-content: center;
-  }
-
-  .logo-card.logo-card-b {
-    width: 10%;
-    margin-left: 15%;
-    background-color: var(--color-white);
-  }
 
   .description-card {
     text-align: center;
@@ -645,8 +628,9 @@ footer section {
     height: 228vh;}
     
   .dropdown-content.unad {
-    width: 224px;
-    left: 68px;}
+    width: 242.2px;
+    left: 8%;
+  }
 
   .dropdown-content.fall {
       width: 224px;
