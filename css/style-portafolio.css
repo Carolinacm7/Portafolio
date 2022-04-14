@@ -448,6 +448,10 @@ section.projects {
   object-fit:contain;
   margin-left: 10px;
 }
+
+.lahaus{
+  filter: contrast(190%);
+}
 .title-card {
   color: var(--color-primary);
   height: 1vh;
