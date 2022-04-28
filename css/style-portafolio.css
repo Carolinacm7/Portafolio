@@ -7,18 +7,15 @@
   font-family: LibreRegular;
   src: url(./font/LibreBaskerville-Regular.ttf);
 }
-
-/* Variables ============================= */
+ /* add variable-- */
 :root {
-  /* para que sea una variable necesito -- */
   /* colors */
+  --color-gray: #DADAD8;
+  --color-light-blue: #0098F1;
   --color-primary: #002E83;
   --color-secundary: #006BDB;
   --color-white: #ffff;
-  --color-light-blue: #0098F1;
-  --color-gray: #DADAD8;
   --gradient-portafolio: linear-gradient(90deg, var(--color-light-blue), #273D65);
-
   --font-family-title: 'LibreBold', Helvetica, Arial, sans-serif;
   --font-family-base: 'LibreRegular', Helvetica, Arial, sans-serif;
 }
@@ -30,20 +27,20 @@
 }
 
 h1 {
+  font-family: var(--font-family-title);
   font-size: 2.5rem;
   font-weight: 800;
-  font-family: var(--font-family-title);
 }
 
 h2 {
+  font-family: var(--font-family-title);
   font-size: 1.8rem;
   font-weight: bold;
-  font-family: var(--font-family-title);
 }
 
 p {
-  font-size: 1.3rem;
   font-family: var(--font-family-base);
+  font-size: 1.3rem;
 }
 
 header {
@@ -54,76 +51,75 @@ header {
 /*estilos perfil*/
 section.flex-container {
   background-image: url(../resources/img/foto-perfil.jpg);
-  background-size: cover;
   background-position: top;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-
 }
 
 /* css specificity :nombrar las clases de manera muy detallada 
 para seleccionar y modificar solo lo necesario y evitar errores*/
-
+/* profile styles */
 .flex-container .profile .profile-title {
-  display: flex;
-  justify-content: center;
   color: var(--color-white);
-  text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+  display: flex;
   font-size: 4rem;
-  width: 86vw;
   height: 4vh;
+  justify-content: center;
+  text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+  width: 86vw;
 }
 
 .flex-container .profile .profile-title-two {
-  display: flex;
   color: var(--color-white);
-  text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+  display: flex;
   font-size: 4rem;
-  width: 77vw;
   justify-content: flex-end;
+  text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+  width: 77vw;
 }
 
 .flex-container .profile .profile-line {
   display: flex;
-
-  text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
   background-color: var(--color-white);
   height: 1vh;
-  width: 51rem;
   margin-left: 21rem;
+  text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+  width: 51rem;
 }
 
 .profile .profile_subtitle {
-  display: flex;
-  justify-content: space-around;
   color: var(--color-white);
+  display: flex;
   font-size: 2rem;
+  justify-content: space-around;
   margin-left: 23rem;
   text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
 }
 
 .profile .profile_text {
-  text-align: center;
-  justify-content: flex-end;
-  text-align: center;
-  width: 43vw;
-  margin-left: 29rem;
   color: var(--color-white);
+  justify-content: flex-end;
+  margin-left: 29rem;
+  text-align: center;
+  text-align: center;
   text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
+  width: 43vw;
 }
 
-/* Estilos Habilidades*/
+/* Skills Styles*/
 .container-skills {
   margin-top: 3rem;
 }
 
 .title-skills {
-  display: flex;
-  justify-content: center;
   color: var(--color-primary);
-  text-shadow: 2px 2px 5px var(--color-white);
+  display: flex;
   align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px 5px var(--color-white);
+  
 }
 
 .skills {
@@ -133,32 +129,33 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
 }
 
 .circular-progress {
-  position: relative;
   margin: auto;
+  position: relative;
 }
 
 .circular-progress,
 .circular-progress:before,
 .circular-progress:after {
-  width: 12rem;
-  height: 12rem;
   border-radius: 50%;
+  height: 12rem;
   padding: 20px 40px;
+  width: 12rem;
 }
 
 .circular-progress:before,
 .circular-progress:after {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   text-align: center;
 }
 
 .circular-progress:before {
-  line-height: 8rem;
-  padding: 0.5em;
   box-sizing: border-box;
   font-size: 1.8rem;
+  line-height: 8rem;
+  padding: 0.5em;
+ 
 }
 
 .circular-progress:after {
@@ -178,13 +175,13 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
 .html5:before {
   content: "html5";
   background: var(--color-white) content-box;
-  transform: rotate(198deg);
   text-transform: uppercase;
+  transform: rotate(198deg);
 }
 
 .html5:after {
-  content: "90%";
   background: linear-gradient(transparent 50%, var(--color-white) 50%);
+  content: "90%";
   transform: scale(1.1) rotate(198deg);
 }
 
@@ -199,10 +196,10 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
 }
 
 .css3:before {
-  content: "css3";
   background: var(--color-white) content-box;
-  transform: rotate(207deg);
+  content: "css3";
   text-transform: uppercase;
+  transform: rotate(207deg);
 }
 
 .css3:after {
@@ -224,13 +221,14 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
 .jscript:before {
   content: "js";
   background: var(--color-white) content-box;
-  transform: rotate(256deg);
   text-transform: uppercase;
+  transform: rotate(256deg);
+  
 }
 
 .jscript:after {
-  content: "37%";
   background: linear-gradient(transparent 50%, var(--color-white) 50%);
+  content: "37%";
   transform: scale(1.1) rotate(258deg);
 }
 
@@ -245,10 +243,10 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
 }
 
 .github:before {
-  content: "Github";
   background: var(--color-white) content-box;
-  transform: rotate(208deg);
+  content: "Github";
   text-transform: uppercase;
+  transform: rotate(208deg);
 }
 
 .github:after {
@@ -265,9 +263,8 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
 
 .personal {
   color: var(--color-light-blue);
-  font-size: 2.5rem;
   font-family: var(--font-family-title);
-
+  font-size: 2.5rem;
 }
 
 .personal b {
@@ -283,27 +280,27 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
 }
 
 .personal .innerpersonal {
-  display: inline-block;
   color: var(--color-primary);
+  display: inline-block;
   position: relative;
   /*animation*/
-  -webkit-animation: move 5s;
+  animation: move 5s;
   -moz-animation: move 5s;
   -ms-animation: move 5s;
   -o-animation: move 5s;
-  animation: move 5s;
+  -webkit-animation: move 5s;
   /*animation-iteration-count*/
-  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   -ms-animation-iteration-count: infinite;
   -o-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
   /*animation-delay*/
-  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
   -moz-animation-delay: 1s;
   -ms-animation-delay: 1s;
   -o-animation-delay: 1s;
-  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
 }
 
 @keyframes move {
@@ -416,10 +413,10 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
   }
 }
 
-/*estilos proyectos*/
+/*projects style*/
 section.projects {
-  height: 100vh;
   background-color: var(--color-primary);
+  height: 100vh;
 }
 .card-projects {
   display: flex;
@@ -427,64 +424,66 @@ section.projects {
   justify-content: space-around;
 }
 .body-card {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  width: 242px;
-  border-radius: 2%;
   background-color: var(--color-white);
+  border-radius: 2%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
   padding: 20px;
+  width: 242px;
 }
+
 .title-projets {
-  text-align: center;
-  padding-top: 1.5rem;
   color: var(--color-white);
- 
+  padding-top: 1.5rem;
+  text-align: center;
 }
 .logo-card {
-  width: 90%;
   height: 25vh;
-  object-fit:contain;
   margin-left: 10px;
+  object-fit:contain;
+  width: 90%;
+}
+
+.title-card {
+  color: var(--color-primary);
+  display: flex;
+  height: 1vh;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.description-card {
+  text-align: center;
 }
 
 .lahaus{
   filter: contrast(190%);
 }
-.title-card {
-  color: var(--color-primary);
-  height: 1vh;
-  margin-top: 4%;
-  display: flex;
-  justify-content: center;
-}
-.description-card {
-  text-align: center;
-}
 
 .btn-card {
   background-color: var(--color-light-blue);
-  color: var(--color-white);
-  border-radius: 30px;
-  padding: 11px 61px;
-  font-size: 1.2rem;
-  border: none;
-  font-family: var(--font-family-base);
-  cursor: pointer;
-  flex: 1 1 auto;
   border: none;
   border-bottom-style: solid;
+  color: var(--color-white);
+  cursor: pointer;
+  border-radius: 30px;
+  flex: 1 1 auto;
+  font-family: var(--font-family-base);
+  font-size: 1.2rem;
+  padding: 11px 61px;
 } 
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  font-family: var(--font-family-base);
-  width: 182px;
   border-radius: 10%;
-  text-align: center;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: none;
+  font-family: var(--font-family-base);
+  position: absolute;
+  text-align: center;
+  width: 182px;
 }
+
 .dropdown-content.unad{
   width: 242px;
   left: 109px;
@@ -501,19 +500,20 @@ section.projects {
 }
 
 .dropdown-content a {
-  color: var(--color-light-blue);
   background-color: var(--color-white);
+  color: var(--color-light-blue);
+  display: block;
   font-family: var(--font-family-base);
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  
 }
 
 .dropdown-content a:hover {
   background-color: var(--color-gray);
   color: var(--color-primary);
-  font-size: 1.2rem;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 .dropdown:hover .dropdown-content {
@@ -525,52 +525,51 @@ section.projects {
 }
 
 .logo-footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
   align-content:flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 footer section {
-  display: flex;
-  flex-direction: column;
-  font-family: var(--font-family-base);
-  color: var(--color-primary);
-  text-align: center;
-  white-space: pre;
-  font-size: 0.7rem;
   align-content:flex-end;
+  color: var(--color-primary);
+  display: flex;
+  font-family: var(--font-family-base);
+  font-size: 0.7rem;
+  flex-direction: column;
+  text-align: center;
   margin-top: 40px;
+  white-space: pre;
 }
-
 
 @media (max-width:900px) {
   section.flex-container {
-    background-image: url(../resources/img/foto-perfil-mb.jpg);
-    background-repeat: no-repeat;
     align-items: center;
-    height: 80vh;
+    background-image: url(../resources/img/foto-perfil-mb.jpg);
     background-position: bottom;
+    background-repeat: no-repeat;
+    height: 80vh;
   }
 
   .flex-container .profile .profile-title {
+    font-size: 2rem;
+    height: auto;
     justify-content: center;
     width: auto;
-    height: auto;
-    font-size: 2rem;
   }
 
   .flex-container .profile .profile-title-two {
     font-size: 2rem;
-    width: auto;
     justify-content: center;
+    width: auto;
   }
 
   .flex-container .profile .profile-line {
     display: flex;
-    width: 100%;
     margin-left: auto;
+    width: 100%;
   }
 
   .profile .profile_subtitle {
@@ -580,8 +579,9 @@ footer section {
 
 
   .profile .profile_text {
-    width: auto;
     margin-left: auto;
+    width: auto;
+    
   }
 
   .container-soft-skill {
@@ -591,34 +591,32 @@ footer section {
   }
 
   section.projects {
-    margin-top: 15%;
-    height: 204vh;
     background-color: var(--color-primary);
+    height: 204vh;
+    margin-top: 15%;
   }
 
   .card-projects {
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: space-between;
     align-items: center;
     align-content: center;
-  }
-  .body-card {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    width: 224px;
-    border-radius: 2%;
-    margin: 20%;
+    justify-content: space-between;
   }
 
-
+  .body-card {
+    align-content: center;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    margin: 20%;
+    width: 224px;
+  }
 
   .description-card {
+    color: var(--color-secundary);
     text-align: center;
     margin-top: 1rem;
-    color: var(--color-secundary);
   }
 
   .title-card {
