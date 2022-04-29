@@ -587,7 +587,6 @@ footer section {
   .container-soft-skill {
     flex-direction: column;
     text-align: center;
-    
   }
 
   section.projects {
@@ -641,7 +640,7 @@ footer section {
       width: 224px;
       left: 68px;
   }
-  
+
     footer section {
       font-size: 0.5rem;
     }
