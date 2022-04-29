@@ -21,10 +21,7 @@
 }
 
 *,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
+*:before,*:after { box-sizing: border-box;}
 
 h1 {
   font-family: var(--font-family-title);
@@ -47,7 +44,6 @@ header {
   height: 79vh;
   margin-bottom: 3rem;
 }
-
 /*estilos perfil*/
 section.flex-container {
   background-image: url(../resources/img/foto-perfil.jpg);
@@ -109,9 +105,7 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
 }
 
 /* Skills Styles*/
-.container-skills {
-  margin-top: 3rem;
-}
+.container-skills {margin-top: 3rem;}
 
 .title-skills {
   color: var(--color-primary);
@@ -158,19 +152,14 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
  
 }
 
-.circular-progress:after {
-  line-height: 13rem;
-}
+.circular-progress:after {line-height: 13rem;}
 
 .html5 {
   background: linear-gradient(0deg, var(--color-primary) 50%, var(--color-gray) 50%);
   transform: rotate(162deg);
 }
 
-.html5:before,
-.html5:after {
-  color: var(--color-primary);
-}
+.html5:before,.html5:after {color: var(--color-primary);}
 
 .html5:before {
   content: "html5";
@@ -190,10 +179,7 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
   transform: rotate(153deg);
 }
 
-.css3:before,
-.css3:after {
-  color: var(--color-light-blue);
-}
+.css3:before,.css3:after {color: var(--color-light-blue);}
 
 .css3:before {
   background: var(--color-white) content-box;
@@ -213,10 +199,7 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
   transform: rotate(102.6deg);
 }
 
-.jscript:before,
-.jscript:after {
-  color: var(--color-primary);
-}
+.jscript:before,.jscript:after {color: var(--color-primary);}
 
 .jscript:before {
   content: "js";
@@ -237,10 +220,7 @@ para seleccionar y modificar solo lo necesario y evitar errores*/
   transform: rotate(153deg);
 }
 
-.github:before,
-.github:after {
-  color: var(--color-light-blue);
-}
+.github:before,.github:after {color: var(--color-light-blue);}
 
 .github:before {
   background: var(--color-white) content-box;
@@ -453,13 +433,9 @@ section.projects {
   margin-top: 4%;
 }
 
-.description-card {
-  text-align: center;
-}
+.description-card {text-align: center;}
 
-.lahaus{
-  filter: contrast(190%);
-}
+.lahaus{filter: contrast(190%);}
 
 .btn-card {
   background-color: var(--color-light-blue);
@@ -516,13 +492,9 @@ section.projects {
   font-size: 1.2rem;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+.dropdown:hover .dropdown-content { display: block;}
 
-.dropdown:hover .dropbtn {
-  background-color: var(--color-light-blue);
-}
+.dropdown:hover .dropbtn {background-color: var(--color-light-blue);}
 
 .logo-footer {
   align-content:flex-end;
@@ -581,7 +553,6 @@ footer section {
   .profile .profile_text {
     margin-left: auto;
     width: auto;
-    
   }
 
   .container-soft-skill {
@@ -641,7 +612,5 @@ footer section {
       left: 68px;
   }
 
-    footer section {
-      font-size: 0.5rem;
-    }
+    footer section {font-size: 0.5rem;}
 }
